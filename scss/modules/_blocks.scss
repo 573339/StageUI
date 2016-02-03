@@ -1,0 +1,123 @@
+// BLOCKS
+
+.block {
+    margin-bottom: 15px;
+    background-color: $light-color;
+    width: 340px;
+
+    p {
+        line-height: 20px;
+        margin: 0;
+    }
+}
+
+.block-content {
+    padding: 20px;
+
+    h3 {
+        color: $dark-color;
+        font-weight: 600;
+    }
+
+    p {
+        color: $dark-color;
+    }
+}
+
+.list-group {
+    border-top: 1px solid $grey-color;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.list-group-item {
+    float: left;
+    margin-right: 10px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.list-group > li > i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.list-group > li {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-right: 30px;
+}
+
+.list-group-item:last-child {
+    float: right;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.ellipsis {
+    float: right;
+    position: relative;
+    top: -39px;
+    background-color: $white-color;
+    border: 1px solid $grey-color;
+    padding: 4px 6px;
+    color: $dark-color;
+}
+
+i {
+    padding: 12px 10px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background-color: $blue-color;
+    color: $white-color;
+}
+
+.code {
+    @extend i;
+
+    //unique background
+    background-color: $primary-color;
+}
+
+.component {
+    @extend i;
+
+    //unique background
+    background-color: $secondary-color;
+}
+
+.stack {
+    @extend i;
+
+    //unique background
+    background-color: $dark-color;
+}
+
+// DROPDOWN MENU
+
+.dropdown-menu {
+    left: 160px;
+    top: -8px;
+}
+
+.dropdown-menu > li > a {
+    font-size: 14px;
+}
+
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    z-index: 10;
+}

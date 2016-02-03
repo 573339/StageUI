@@ -1,0 +1,31 @@
+.cta {
+    margin-top: 30px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-primary {
+    color: $white-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.btn-primary:hover {
+    color: $white-color;
+    background-color: $hoverPink;
+    border-color: $hoverPink;
+}
+
+.btn-secondary {
+    color: $white-color;
+    background-color: $dark-color;
+    border-color: $white-color;
+}
+
+.btn-secondary:hover {
+    color: $dark-color;
+    background-color: $white-color;
+    border-color: $white-color;
+}

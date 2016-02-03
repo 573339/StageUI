@@ -1,0 +1,135 @@
+/* LOGIN FORM*/
+
+body {
+    background: $dark-color url(../img/login-bkgd.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a:link {
+    color: $white-color;
+}
+
+a:visited {
+    color: $light-color;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: $blue-color;
+}
+
+#login-title {
+    font-family: $base-font-family;
+    text-align: center;
+    color: $white-color;
+    font-weight: 300;
+}
+
+.form-text {
+    color: $white-color;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.login-label {
+    color: $white-color;
+    font-weight: 600;
+    margin: 0;
+}
+
+.form-control:focus {
+    border-color: $primary-color;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $primary-color;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $primary-color;
+}
+
+.input-lg {
+    height: 40px;
+    border-radius: 0;
+    background-color: $dark-color;
+    color: $white-color;
+    border: 1px solid $base-font-color;
+}
+
+.login-form {
+    margin-top: 60px;
+    background: $dark-color;
+    opacity: 0.7;
+}
+
+form[role=login] {
+    color: #5d5d5d;
+    padding: 26px;
+}
+
+form[role=login] img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+form[role=login] input,
+form[role=login] button {
+    font-size: 14px;
+    margin: 8px 0 16px 0;
+}
+
+#login-options {
+    text-align: center;
+}
+
+.form-links {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 50px;
+
+    a {
+        color: $white-color;
+    }
+}
+
+// MODALS
+
+.modal-content {
+    background-color: $dark-color;
+    color: $white-color;
+}
+
+.modal-header {
+    background-color: $darker;
+    border-bottom: 1px solid #4c4d4d;
+}
+
+.modal-footer {
+    border-top: 1px solid #4c4d4d;
+}
+
+.form-group {
+    label {
+        font-weight: lighter;
+    }
+}
+
+.close {
+    float: right;
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 1;
+    color: #fff !important;
+    text-shadow: 0 0 0 #fff;
+    opacity: 1.5;
+}
+
+.close:hover, .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}

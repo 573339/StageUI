@@ -1,9 +1,10 @@
 // BLOCKS
 
 .block {
-    margin-bottom: 15px;
-    background-color: $light-color;
+    margin-bottom: 30px;
+    background-color: $mute-white;
     width: 340px;
+    min-height: 204px;
 
     p {
         line-height: 20px;
@@ -15,12 +16,15 @@
     padding: 20px;
 
     h3 {
-        color: $dark-color;
+        color: $dark-grey;
         font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     p {
-        color: $dark-color;
+        color: $dark-grey;
+        font-size: 13px;
     }
 }
 
@@ -29,7 +33,7 @@
     display: inline-block;
     margin: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .list-group-item {
@@ -62,11 +66,12 @@
 .ellipsis {
     float: right;
     position: relative;
-    top: -39px;
+    top: 21px;
     background-color: $white-color;
     border: 1px solid $grey-color;
     padding: 4px 6px;
-    color: $dark-color;
+    color: $dark-grey;
+    right: 17px;
 }
 
 i {
@@ -75,7 +80,7 @@ i {
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100px;
-    background-color: $blue-color;
+    background-color: $secondary-color;
     color: $white-color;
 }
 
@@ -97,14 +102,14 @@ i {
     @extend i;
 
     //unique background
-    background-color: $dark-color;
+    background-color: $purple-color;
 }
 
 // DROPDOWN MENU
 
 .dropdown-menu {
-    left: 160px;
-    top: -8px;
+    left: 164px;
+    top: 55px;
 }
 
 .dropdown-menu > li > a {

@@ -4,6 +4,7 @@
 
 .btn {
     border-radius: 0px;
+    font-size: 15px;
 }
 
 .btn-primary {
@@ -14,18 +15,24 @@
 
 .btn-primary:hover {
     color: $white-color;
-    background-color: $hoverPink;
-    border-color: $hoverPink;
+    background-color: $PinkHover;
+    border-color: $PinkHover;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: $white-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
 }
 
 .btn-secondary {
     color: $white-color;
-    background-color: $dark-color;
+    background-color: $dark-grey;
     border-color: $white-color;
 }
 
 .btn-secondary:hover {
-    color: $dark-color;
+    color: $dark-grey;
     background-color: $white-color;
     border-color: $white-color;
 }

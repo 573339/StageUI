@@ -1,9 +1,9 @@
 body {
-    background-color: $dark-color;
+    background-color: $dark-grey;
     background-image: none;
 }
 
-/* Navbar */
+// NAVBAR
 
 .navbar-header > a:hover {
     border: none !important;
@@ -35,4 +35,98 @@ body {
     border-bottom: 4px solid $white-color;
     background-color: transparent;
     color: $white-color;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:visited {
+    color: $white-color;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: $white-color;
+}
+
+.nav .open > a, .nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent !important;
+}
+
+// USER ICON
+
+img {
+    vertical-align: middle;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.img24 {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+// DROPDOWN
+
+.navbar-nav > li > .dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    padding: 0 0;
+    border: 0;
+}
+
+.dropdown-menu a:link {
+    color: $light-grey !important;
+}
+
+.dropdown a:link, a:visited, a:hover, a:active {
+    border: none;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: $grey-color;
+    color: $white-color !important;
+}
+
+.dropdown-menu > li > a {
+    color: $grey-color !important;
+}
+
+a.dropdown-toggle {
+    opacity: 1.0 !important;
+}
+
+// PAGINATION
+
+.pagination {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.pagination > li > a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: $secondary-color;
+    text-decoration: none;
+    background-color: $black-color;
+    border: 1px solid $grey-color;
+}
+
+.pagination > li > a:hover {
+    z-index: 2;
+    color: $white-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
 }

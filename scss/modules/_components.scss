@@ -1,7 +1,7 @@
 /* LOGIN FORM*/
 
 body {
-    background: $dark-color url(../img/login-bkgd.jpg) no-repeat center center fixed;
+    background: $dark-grey url(../img/login-bkgd.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,12 +13,12 @@ a:link {
 }
 
 a:visited {
-    color: $light-color;
+    color: $light-grey;
 }
 
 a:hover, a:active {
     text-decoration: none;
-    color: $blue-color;
+    color: $secondary-color;
 }
 
 #login-title {
@@ -26,6 +26,10 @@ a:hover, a:active {
     text-align: center;
     color: $white-color;
     font-weight: 300;
+}
+
+.form-control {
+    border-radius: 0;
 }
 
 .form-text {
@@ -54,14 +58,14 @@ label {
 .input-lg {
     height: 40px;
     border-radius: 0;
-    background-color: $dark-color;
+    background-color: $dark-grey;
     color: $white-color;
     border: 1px solid $base-font-color;
 }
 
 .login-form {
     margin-top: 60px;
-    background: $dark-color;
+    background: $dark-grey;
     opacity: 0.7;
 }
 
@@ -98,13 +102,21 @@ form[role=login] button {
 
 // MODALS
 
+.modal-dialog {
+    margin: 280px auto;
+}
+
+.modal-body > h4:first-child {
+    color: $primary-color;
+}
+
 .modal-content {
-    background-color: $dark-color;
+    background-color: $dark-grey;
     color: $white-color;
 }
 
 .modal-header {
-    background-color: $darker;
+    background-color: $black-color;
     border-bottom: 1px solid #4c4d4d;
 }
 

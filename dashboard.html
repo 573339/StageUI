@@ -26,23 +26,20 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#"><img src="img/stage-logoReverse.png" alt="Stage" id="logo"></a>
+        <a class="navbar-brand" href="#"><img src="img/stage-logo.png" alt="Stage" id="logo"></a>
       </div>
       <div id="navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../navbar/">Dashboard<span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="../navbar/">My Workspace<span class="sr-only">(current)</span></a></li>
           <li ><a href="./">Catalog</a></li>
           <li><a href="../navbar-fixed-top/">My Projects</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, Alexander <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="img/avatar.jpg" class="img-circle img24">Hello, Alexander <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -54,7 +51,7 @@
   <div class="container">
     <div class="row">
       <div class="page-title col-xs-9">
-        <h1>My Dashboard</h1>
+        <h1>My Workspace</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus leo massa, in pulvinar nisi sagittis eget. Suspendisse vel viverra justo.</p>
       </div>
       <div class="cta col-xs-3"><button class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#createModal">Create a New Workspace</button></div>
@@ -63,11 +60,9 @@
 
   <!--DASHBOARD TILES-->
   <div class="container">
-    <div class="row">
+    <div class="dashboard row">
       <div class="col-xs-4">
         <div class="block">
-          <div class="block-content">
-            <h3>Shared With Me</h3>
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
@@ -75,9 +70,11 @@
                 <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
               </ul>
             </li>
-            <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
+          <div class="block-content">
+            <h3>Shared With Me</h3>
+            <p>A calculus can hardly be considered</p>
           </div><!--end of block-cont-->
-          <ul class="list-group">
+          <ul class="list-group clearfix">
             <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
             <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
             <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
@@ -86,9 +83,7 @@
       </div>
       <div class="col-xs-4">
         <div class="block">
-          <div class="block-content">
-            <h3>Shared With Me</h3>
-            <li class="dropdown">
+             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
               <ul class="dropdown-menu">
                 <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
@@ -96,6 +91,8 @@
                 <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
               </ul>
             </li>
+          <div class="block-content">
+            <h3>Security</h3>
             <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
           </div><!--end of block-cont-->
           <ul class="list-group">
@@ -107,8 +104,6 @@
       </div>
       <div class="col-xs-4">
         <div class="block">
-          <div class="block-content">
-            <h3>Shared With Me</h3>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
               <ul class="dropdown-menu">
@@ -117,6 +112,138 @@
                 <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
               </ul>
             </li>
+          <div class="block-content">
+            <h3>Machine Learning</h3>
+            <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+    </div><!--end of row-->
+
+        <div class="dashboard row">
+      <div class="col-xs-4">
+        <div class="block">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>Open Source Operating Systems</h3>
+            <p>A calculus can hardly be considered</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group clearfix">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="block">
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>Data Visualization</h3>
+            <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="block">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#createModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>Design essentials</h3>
+            <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+    </div><!--end of row-->
+
+        <div class="dashboard row">
+      <div class="col-xs-4">
+        <div class="block">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>CSS preprocessors</h3>
+            <p>A calculus can hardly be considered</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group clearfix">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="block">
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#exampleModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>Front-end JavaScript frameworks</h3>
+            <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
+          </div><!--end of block-cont-->
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-code fa-lg code"></i>01</li>
+            <li class="list-group-item"><i class="fa fa-cube fa-lg component"></i>02</li>
+            <li class="list-group-item"><i class="fa fa-database fa-lg stack"></i>03</li>
+          </ul><!--end of list-group-->
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="block">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-ellipsis-h ellipsis"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#createModal">View Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#editModal">Edit Workspace</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#deleteModal">Delete Workspace</a></li>
+              </ul>
+            </li>
+          <div class="block-content">
+            <h3>Ghost</h3>
             <p>A calculus can hardly be considered a briefless pancreas without also being a snowstorm. Framed in a different way...</p>
           </div><!--end of block-cont-->
           <ul class="list-group">
@@ -151,7 +278,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-primary">Create Workspace</button>
         </div>
       </div>
@@ -179,7 +306,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Update Workspace</button>
         </div>
       </div>
@@ -202,15 +329,48 @@
             <h4><strong>This action can not be undone. Do you wish to proceed?</strong></h4>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary pull-left" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
-  </div>      
+  </div> <!--end of modal-->     
 
 </div>
+
 </div>
+
+  <nav>
+    <div class="container">
+      <ul class="pagination pull-right">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span class="fa fa-caret-left"></span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+               <span class="fa fa-caret-right"></span>
+          </a>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+
+  <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        <p class="text-muted">©Copyright 2016, STAGE All Rights Reserved</p>
+      </div>
+       <div class="col-md-6">
+       <img src="img/booz-logo.png" alt="Booz Allen Hamilton" id="bah">
+      </div>
+      </div>
+    </footer>
 
 
       <!-- Bootstrap core JavaScript
@@ -218,6 +378,7 @@
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/boxes.js"></script>
     </body>
     </html>
 

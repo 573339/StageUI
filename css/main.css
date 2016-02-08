@@ -6,7 +6,7 @@ Version 0.0.1
 /* BASE- Base styles, variables, mixins, etc*/
 /* Font Colors */
 /*Background Colors */
-/*Button Colors */
+/*Button State For Primary */
 /* line 1, ../scss/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
   margin-top: 0;
@@ -15,22 +15,23 @@ h1, h2, h3, h4, h5 {
 /* line 1, ../scss/base/_base.scss */
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.7em;
-  color: #666666;
+  color: #2e3234;
 }
 
 /* line 8, ../scss/base/_base.scss */
 .container {
   width: 1080px !important;
+  padding: 0;
 }
 
-/* line 12, ../scss/base/_base.scss */
+/* line 13, ../scss/base/_base.scss */
 ui, li {
   list-style: none;
 }
 
-/* line 16, ../scss/base/_base.scss */
+/* line 17, ../scss/base/_base.scss */
 input, textarea, button {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -40,40 +41,44 @@ input, textarea, button {
 /* MODULES- Individual Site Components*/
 /* line 3, ../scss/modules/_blocks.scss */
 .block {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   background-color: #eeeeee;
   width: 340px;
+  min-height: 204px;
 }
-/* line 8, ../scss/modules/_blocks.scss */
+/* line 9, ../scss/modules/_blocks.scss */
 .block p {
   line-height: 20px;
   margin: 0;
 }
 
-/* line 14, ../scss/modules/_blocks.scss */
+/* line 15, ../scss/modules/_blocks.scss */
 .block-content {
   padding: 20px;
 }
-/* line 17, ../scss/modules/_blocks.scss */
+/* line 18, ../scss/modules/_blocks.scss */
 .block-content h3 {
-  color: #292929;
+  color: #2e3234;
   font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
-/* line 22, ../scss/modules/_blocks.scss */
+/* line 25, ../scss/modules/_blocks.scss */
 .block-content p {
-  color: #292929;
+  color: #2e3234;
+  font-size: 13px;
 }
 
-/* line 27, ../scss/modules/_blocks.scss */
+/* line 31, ../scss/modules/_blocks.scss */
 .list-group {
-  border-top: 1px solid #abacac;
+  border-top: 1px solid #555555;
   display: inline-block;
   margin: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
-/* line 35, ../scss/modules/_blocks.scss */
+/* line 39, ../scss/modules/_blocks.scss */
 .list-group-item {
   float: left;
   margin-right: 10px;
@@ -84,75 +89,76 @@ input, textarea, button {
   position: relative;
 }
 
-/* line 45, ../scss/modules/_blocks.scss */
+/* line 49, ../scss/modules/_blocks.scss */
 .list-group > li > i, .list-group > li > .code, .list-group > li > .component, .list-group > li > .stack {
   font-size: 20px;
   margin-right: 10px;
 }
 
-/* line 50, ../scss/modules/_blocks.scss */
+/* line 54, ../scss/modules/_blocks.scss */
 .list-group > li {
   font-size: 20px;
   font-weight: lighter;
   padding-right: 30px;
 }
 
-/* line 56, ../scss/modules/_blocks.scss */
+/* line 60, ../scss/modules/_blocks.scss */
 .list-group-item:last-child {
   float: right;
   margin-right: 0;
   padding-right: 0;
 }
 
-/* line 62, ../scss/modules/_blocks.scss */
+/* line 66, ../scss/modules/_blocks.scss */
 .ellipsis {
   float: right;
   position: relative;
-  top: -39px;
+  top: 21px;
   background-color: white;
-  border: 1px solid #abacac;
+  border: 1px solid #555555;
   padding: 4px 6px;
-  color: #292929;
+  color: #2e3234;
+  right: 17px;
 }
 
-/* line 72, ../scss/modules/_blocks.scss */
+/* line 77, ../scss/modules/_blocks.scss */
 i, .code, .component, .stack {
   padding: 12px 10px;
   display: inline-block;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
-  background-color: #59c2ab;
+  background-color: #0096a9;
   color: white;
 }
 
-/* line 82, ../scss/modules/_blocks.scss */
+/* line 87, ../scss/modules/_blocks.scss */
 .code {
   background-color: #d23b6a;
 }
 
-/* line 89, ../scss/modules/_blocks.scss */
+/* line 94, ../scss/modules/_blocks.scss */
 .component {
   background-color: #0096a9;
 }
 
-/* line 96, ../scss/modules/_blocks.scss */
+/* line 101, ../scss/modules/_blocks.scss */
 .stack {
-  background-color: #292929;
-}
-
-/* line 105, ../scss/modules/_blocks.scss */
-.dropdown-menu {
-  left: 160px;
-  top: -8px;
+  background-color: #a999de;
 }
 
 /* line 110, ../scss/modules/_blocks.scss */
+.dropdown-menu {
+  left: 164px;
+  top: 55px;
+}
+
+/* line 115, ../scss/modules/_blocks.scss */
 .dropdown-menu > li > a {
   font-size: 14px;
 }
 
-/* line 114, ../scss/modules/_blocks.scss */
+/* line 119, ../scss/modules/_blocks.scss */
 .dropdown ul.dropdown-menu:before {
   content: "";
   border-bottom: 10px solid #fff;
@@ -172,32 +178,40 @@ i, .code, .component, .stack {
 /* line 5, ../scss/modules/_buttons.scss */
 .btn {
   border-radius: 0px;
+  font-size: 15px;
 }
 
-/* line 9, ../scss/modules/_buttons.scss */
+/* line 10, ../scss/modules/_buttons.scss */
 .btn-primary {
   color: white;
   background-color: #d23b6a;
   border-color: #d23b6a;
 }
 
-/* line 15, ../scss/modules/_buttons.scss */
+/* line 16, ../scss/modules/_buttons.scss */
 .btn-primary:hover {
   color: white;
-  background-color: #ee2161;
-  border-color: #ee2161;
+  background-color: #f03c74;
+  border-color: #f03c74;
 }
 
-/* line 21, ../scss/modules/_buttons.scss */
+/* line 22, ../scss/modules/_buttons.scss */
+.btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #d23b6a;
+  border-color: #d23b6a;
+}
+
+/* line 28, ../scss/modules/_buttons.scss */
 .btn-secondary {
   color: white;
-  background-color: #292929;
+  background-color: #2e3234;
   border-color: white;
 }
 
-/* line 27, ../scss/modules/_buttons.scss */
+/* line 34, ../scss/modules/_buttons.scss */
 .btn-secondary:hover {
-  color: #292929;
+  color: #2e3234;
   background-color: white;
   border-color: white;
 }
@@ -210,14 +224,14 @@ i, .code, .component, .stack {
 }
 /* line 8, ../scss/modules/_sections.scss */
 .page-title p {
-  color: #abacac;
+  color: #a7a7a7;
   margin-bottom: 50px;
 }
 
 /* LOGIN FORM*/
 /* line 3, ../scss/modules/_components.scss */
 body {
-  background: #292929 url(../img/login-bkgd.jpg) no-repeat center center fixed;
+  background: #2e3234 url(../img/login-bkgd.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -231,13 +245,13 @@ a:link {
 
 /* line 15, ../scss/modules/_components.scss */
 a:visited {
-  color: #eeeeee;
+  color: #a7a7a7;
 }
 
 /* line 19, ../scss/modules/_components.scss */
 a:hover, a:active {
   text-decoration: none;
-  color: #59c2ab;
+  color: #0096a9;
 }
 
 /* line 24, ../scss/modules/_components.scss */
@@ -249,11 +263,16 @@ a:hover, a:active {
 }
 
 /* line 31, ../scss/modules/_components.scss */
+.form-control {
+  border-radius: 0;
+}
+
+/* line 35, ../scss/modules/_components.scss */
 .form-text {
   color: white;
 }
 
-/* line 35, ../scss/modules/_components.scss */
+/* line 39, ../scss/modules/_components.scss */
 label {
   display: inline-block;
   max-width: 100%;
@@ -261,95 +280,105 @@ label {
   font-weight: 700;
 }
 
-/* line 42, ../scss/modules/_components.scss */
+/* line 46, ../scss/modules/_components.scss */
 .login-label {
   color: white;
   font-weight: 600;
   margin: 0;
 }
 
-/* line 48, ../scss/modules/_components.scss */
+/* line 52, ../scss/modules/_components.scss */
 .form-control:focus {
   border-color: #d23b6a;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #d23b6a;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #d23b6a;
 }
 
-/* line 54, ../scss/modules/_components.scss */
+/* line 58, ../scss/modules/_components.scss */
 .input-lg {
   height: 40px;
   border-radius: 0;
-  background-color: #292929;
+  background-color: #2e3234;
   color: white;
-  border: 1px solid #666666;
+  border: 1px solid #2e3234;
 }
 
-/* line 62, ../scss/modules/_components.scss */
+/* line 66, ../scss/modules/_components.scss */
 .login-form {
   margin-top: 60px;
-  background: #292929;
+  background: #2e3234;
   opacity: 0.7;
 }
 
-/* line 68, ../scss/modules/_components.scss */
+/* line 72, ../scss/modules/_components.scss */
 form[role=login] {
   color: #5d5d5d;
   padding: 26px;
 }
 
-/* line 73, ../scss/modules/_components.scss */
+/* line 77, ../scss/modules/_components.scss */
 form[role=login] img {
   display: block;
   margin: 0 auto;
   margin-bottom: 35px;
 }
 
-/* line 80, ../scss/modules/_components.scss */
+/* line 84, ../scss/modules/_components.scss */
 form[role=login] input,
 form[role=login] button {
   font-size: 14px;
   margin: 8px 0 16px 0;
 }
 
-/* line 85, ../scss/modules/_components.scss */
+/* line 89, ../scss/modules/_components.scss */
 #login-options {
   text-align: center;
 }
 
-/* line 89, ../scss/modules/_components.scss */
+/* line 93, ../scss/modules/_components.scss */
 .form-links {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 50px;
 }
-/* line 94, ../scss/modules/_components.scss */
+/* line 98, ../scss/modules/_components.scss */
 .form-links a {
   color: white;
 }
 
-/* line 101, ../scss/modules/_components.scss */
+/* line 105, ../scss/modules/_components.scss */
+.modal-dialog {
+  margin: 280px auto;
+}
+
+/* line 109, ../scss/modules/_components.scss */
+.modal-body > h4:first-child {
+  color: #d23b6a;
+}
+
+/* line 113, ../scss/modules/_components.scss */
 .modal-content {
-  background-color: #292929;
+  background-color: #2e3234;
   color: white;
 }
 
-/* line 106, ../scss/modules/_components.scss */
+/* line 118, ../scss/modules/_components.scss */
 .modal-header {
-  background-color: #181a1b;
+  background-color: #141414;
   border-bottom: 1px solid #4c4d4d;
 }
 
-/* line 111, ../scss/modules/_components.scss */
+/* line 123, ../scss/modules/_components.scss */
 .modal-footer {
   border-top: 1px solid #4c4d4d;
 }
 
-/* line 116, ../scss/modules/_components.scss */
+/* line 128, ../scss/modules/_components.scss */
 .form-group label {
   font-weight: lighter;
 }
 
-/* line 121, ../scss/modules/_components.scss */
+/* line 133, ../scss/modules/_components.scss */
 .close {
   float: right;
   font-size: 35px;
@@ -360,7 +389,7 @@ form[role=login] button {
   opacity: 1.5;
 }
 
-/* line 131, ../scss/modules/_components.scss */
+/* line 143, ../scss/modules/_components.scss */
 .close:hover, .close:focus {
   color: #fff;
   text-decoration: none;
@@ -370,11 +399,10 @@ form[role=login] button {
 /* LAYOUTS- Page Layout Styles*/
 /* line 1, ../scss/layouts/_nav.scss */
 body {
-  background-color: #292929;
+  background-color: #2e3234;
   background-image: none;
 }
 
-/* Navbar */
 /* line 8, ../scss/layouts/_nav.scss */
 .navbar-header > a:hover {
   border: none !important;
@@ -411,6 +439,110 @@ body {
   color: white;
 }
 
+/* line 43, ../scss/layouts/_nav.scss */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:visited {
+  color: white;
+}
+
+/* line 49, ../scss/layouts/_nav.scss */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+}
+
+/* line 54, ../scss/layouts/_nav.scss */
+.nav .open > a, .nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: transparent !important;
+}
+
+/* line 60, ../scss/layouts/_nav.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 64, ../scss/layouts/_nav.scss */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* line 68, ../scss/layouts/_nav.scss */
+.img24 {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* line 76, ../scss/layouts/_nav.scss */
+.navbar-nav > li > .dropdown-menu {
+  padding: 0;
+}
+
+/* line 80, ../scss/layouts/_nav.scss */
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0 0;
+  border: 0;
+}
+
+/* line 86, ../scss/layouts/_nav.scss */
+.dropdown-menu a:link {
+  color: #a7a7a7 !important;
+}
+
+/* line 90, ../scss/layouts/_nav.scss */
+.dropdown a:link, a:visited, a:hover, a:active {
+  border: none;
+}
+
+/* line 94, ../scss/layouts/_nav.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #555555;
+  color: white !important;
+}
+
+/* line 99, ../scss/layouts/_nav.scss */
+.dropdown-menu > li > a {
+  color: #555555 !important;
+}
+
+/* line 103, ../scss/layouts/_nav.scss */
+a.dropdown-toggle {
+  opacity: 1.0 !important;
+}
+
+/* line 109, ../scss/layouts/_nav.scss */
+.pagination {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* line 115, ../scss/layouts/_nav.scss */
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #0096a9;
+  text-decoration: none;
+  background-color: #141414;
+  border: 1px solid #555555;
+}
+
+/* line 127, ../scss/layouts/_nav.scss */
+.pagination > li > a:hover {
+  z-index: 2;
+  color: white;
+  background-color: #0096a9;
+  border-color: #0096a9;
+}
+
 /* line 1, ../scss/layouts/_header.scss */
 #logo {
   padding: 20px;
@@ -419,13 +551,15 @@ body {
 /*FOOTER*/
 /* line 3, ../scss/layouts/_footer.scss */
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
+  margin-top: 50px;
+  border-top: 1px solid #555555;
+  padding-top: 20px;
 }
 
-/* line 10, ../scss/layouts/_footer.scss */
+/* line 12, ../scss/layouts/_footer.scss */
 #bah {
   float: right;
 }

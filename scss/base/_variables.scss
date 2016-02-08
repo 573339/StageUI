@@ -1,18 +1,22 @@
 /* Font Colors */
-$base-font-size: 14px;
+$base-font-size: 13px;
 $base-font-family: "Open Sans", Arial, sans-serif;
-$base-font-color: #666666;
+$base-font-color: #2e3234;
 
 /*Background Colors */
 
 $primary-color: #d23b6a;
 $secondary-color: #0096a9;
-$light-color: #eeeeee;
-$dark-color: #292929;
+$light-grey: #a7a7a7;
+$grey-color: #555555;
+$dark-grey: #2e3234;
+$purple-color: #a999de;
 $white-color: #ffffff;
-$grey-color: #abacac;
-$darker: #181a1b;
+$black-color: #141414;
+$mute-white: #eeeeee;
 
-/*Button Colors */
-$blue-color: #59c2ab;
-$hoverPink: #ee2161;
+/*Button State For Primary */
+$PinkStatic: #d23b6a;
+$PinkHover: #f03c74;
+$PinkActive: #b02b55;
+$PinkDisabled: #ee2161;
